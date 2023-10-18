@@ -44,7 +44,7 @@ mod tests {
     #[test]
     fn test_success() {
         let timestamp = std::time::SystemTime::now()
-            .duration_since(std::time::UNIX_EPOCH)
+            .duration_since(std::time::UNIX_EPOCH) 
             .unwrap()
             .as_secs();
         let s = std::env::var("TEST_FOO").unwrap();
